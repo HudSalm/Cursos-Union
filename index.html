@@ -165,7 +165,11 @@
             alt="imagem de algumas pessoas aprendendo juntas em um computador"
           />
         </div>
-        <form action="" class="form-contato">
+        <form
+          action="https://formsubmit.co/hudson.salm2001@outlook.com"
+          method="POST"
+          class="form-contato"
+        >
           <h3>Quer saber mais sobre as formações do Curso Union ?</h3>
           <label for="name" class="label">Nome:</label>
           <input
@@ -179,16 +183,18 @@
             <label for="ddd" class="label">DDD</label>
             <label for="phone" class="label">Digite seu Celular:</label>
             <input
-              type="number"
+              type="tel"
               placeholder="*DDI"
               required
+              maxlength="3"
               id="ddd"
               class="input"
             />
             <input
-              type="number"
+              type="tel"
               placeholder="00000-0000"
               required
+              maxlength="10"
               id="phone"
               class="input"
             />
@@ -196,25 +202,27 @@
           <div class="campo-location">
             <div class="campo-estate">
               <label for="estate" class="label">Estado:</label>
-              <input
-                type="text"
-                placeholder="Selecione"
-                required
-                id="estate"
-                class="input"
-              />
+              <select class="select" name="estate" id="select-estado">
+                <option value="">Carregando...</option>
+              </select>
             </div>
             <div class="campo-city">
               <label for="city" class="label">Cidade:</label>
-              <input
-                type="text"
-                placeholder="Selecione"
-                required
-                id="city"
-                class="input"
-              />
+              <select class="select" name="city" id="select-cidade" disabled>
+                <option value="">Carregando...</option>
+              </select>
             </div>
           </div>
+
+          <label for="bairro" class="label">Bairro:</label>
+          <input
+            type="text"
+            id="bairro"
+            class="input"
+            placeholder="Selecione"
+            required
+          />
+
           <label for="email" class="label">Seu Email:</label>
           <input
             type="text"
@@ -222,17 +230,6 @@
             required
             id="email"
             class="input"
-          />
-          <label for="school" class="label"
-            >Escolha a Unidade mais Próxima de você:</label
-          >
-
-          <input
-            type="text"
-            id="school"
-            class="input"
-            placeholder="Selecione"
-            required
           />
           <!-- <div class="checkbox">
             <input
@@ -264,12 +261,13 @@
       </article>
     </main>
     <footer>
-      <img
-        src="/assets/Gemini_Generated_Image_7yu4y57yu4y57yu4-removebg-preview 1 (1).svg"
-        alt=""
-      />
+      <a href="#sobre"
+        ><img
+          src="/assets/Gemini_Generated_Image_7yu4y57yu4y57yu4-removebg-preview 1 (1).svg"
+          alt=""
+      /></a>
       <ul class="links-footer">
-        <li><a href="" class="title">Aprendizagem</a></li>
+        <li class="title">Aprendizagem</li>
         <li><a href="">Formação de Culinária</a></li>
         <li><a href="">Formação de Eletricista</a></li>
         <li><a href="">Formação de Informática</a></li>
@@ -278,14 +276,14 @@
         <li><a href="">Formação de Música</a></li>
       </ul>
       <ul class="links-footer">
-        <li><a href="" class="title">Institucional</a></li>
+        <li class="title">Institucional</li>
         <li><a href="">Parcerias com Empresas</a></li>
         <li><a href="">Promoções e Descontos</a></li>
         <li><a href="">Política de Privacidade</a></li>
         <li><a href="">Projetos Nossos</a></li>
       </ul>
       <ul class="links-footer">
-        <li><a href="" class="title">Dúvidas</a></li>
+        <li class="title">Dúvidas</li>
         <li><a href="">Contato e Trabalhe Conosco</a></li>
         <li><a href="">Como Abrir uma Franquia</a></li>
         <li><a href="">Perguntas Frequantes</a></li>

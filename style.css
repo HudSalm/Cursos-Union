@@ -28,6 +28,7 @@ a {
   align-self: center;
   border-radius: 8px;
   color: #e8f5ff;
+  cursor: pointer;
 }
 
 header {
@@ -197,7 +198,6 @@ main {
   border-radius: 8px;
   border: none;
   font-size: 14px;
-  border: solid 1px #9acef8;
 }
 .contatos .form-contato .input::-moz-placeholder {
   color: rgb(196, 196, 202);
@@ -210,6 +210,12 @@ main {
 .contatos .form-contato .label {
   color: #c3e3fd;
   font-size: 12px;
+}
+.contatos .form-contato .select {
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
 }
 .contatos .form-contato .campo-phone {
   display: grid;
@@ -279,11 +285,19 @@ footer .links-footer li a {
   text-decoration: none;
 }
 footer .links-social {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   padding: 0;
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
+}
+footer .links-social .title {
+  font-weight: bold;
+  font-family: "Chiron Sung HK", serif;
+  color: #2196f3;
+  grid-column: 1/4;
+  padding: 1rem 0;
 }
 footer .links-social img {
   max-width: 100%;
@@ -427,9 +441,14 @@ footer p {
   footer .links-footer {
     gap: 2.2rem;
   }
+  footer .links-footer li a:hover {
+    font-weight: bold;
+  }
   footer .links-social {
+    display: flex;
     align-items: center;
     justify-content: end;
+    grid-template-columns: 1fr;
     grid-column: 1/5;
     padding: 4rem;
     border-top: solid 1px #2196f3;
