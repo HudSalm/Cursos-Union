@@ -52,6 +52,41 @@ header {
   justify-content: space-between;
 }
 
+#status {
+  display: none;
+  padding: 12px 15px;
+  margin-top: 15px;
+  border-radius: 6px;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+/* Classe para MOSTRAR a mensagem */
+#status.show {
+  display: block;
+}
+
+/* Estilo de SUCESSO (verde) */
+#status.success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+/* Estilo de ERRO (vermelho) */
+#status.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+/* Estilo de CARREGANDO (cinza/azul) */
+#status.loading {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+
 .logo {
   max-width: 100%;
   width: 20vw;

@@ -277,6 +277,7 @@
           action="https://formsubmit.co/hudson.salm2001@outlook.com"
           method="POST"
           class="form-contato"
+          id="formulario"
         >
           <h3>Quer saber mais sobre os nossos cursos ?</h3>
           <label for="name" class="label">Nome:</label>
@@ -284,7 +285,7 @@
             type="text"
             placeholder="Ex:João Silva"
             required
-            id="name"
+            id="nome"
             class="input"
           />
           <div class="campo-phone">
@@ -303,7 +304,7 @@
               placeholder="00000-0000"
               required
               maxlength="10"
-              id="phone"
+              id="telefone"
               class="input"
             />
           </div>
@@ -365,6 +366,7 @@
             >
           </div> -->
           <button class="btn" type="submit">Eu Quero</button>
+          <div id="status"></div>
         </form>
       </article>
     </main>
@@ -411,6 +413,7 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="script.js"></script>
   </body>
 </html>
