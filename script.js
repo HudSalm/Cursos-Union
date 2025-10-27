@@ -1,6 +1,6 @@
-const SUPABASE_URL = 'https://pzlgalsmyrldtreifcuv.supabase.co';
+const SUPABASE_URL = 'https://fssmpkrefjgkuqjehese.supabase.co';
 const SUPABASE_KEY =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB6bGdhbHNteXJsZHRyZWlmY3V2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE1Nzg3NjcsImV4cCI6MjA3NzE1NDc2N30.KspBFfMckMtmyhGhRm67sk0SlNE3YVm8LK_nMMxKK4g';
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZzc21wa3JlZmpna3VxamVoZXNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE1ODg3ODQsImV4cCI6MjA3NzE2NDc4NH0.DLTyOAMHFAcrIlYN2KgS86d57Oxa4jKqtvcMFEWSN9g';
 
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       setTimeout(() => {
         submitButton.disabled = false;
+        statusEl.className = '';
         statusEl.textContent = '';
       }, 5000);
     }
